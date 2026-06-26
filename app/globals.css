@@ -1,0 +1,154 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Root variables */
+:root {
+  --primary: #10b981;
+  --bg-dark: #0f0f0f;
+  --bg-light: #f9f9f9;
+  --text-muted: #888888;
+}
+
+/* Smooth scrolling */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Base body styles */
+body {
+  background-color: #f9f9f9;
+  color: #000000;
+  transition: background-color 0.3s, color 0.3s;
+  font-family: 'Inter', system-ui, sans-serif;
+}
+
+html.dark body {
+  background-color: #0f0f0f;
+  color: #ffffff;
+}
+
+/* Typography defaults */
+h1 {
+  font-size: 3.75rem;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+}
+
+h2 {
+  font-size: 3rem;
+  font-weight: 700;
+}
+
+h3 {
+  font-size: 1.875rem;
+  font-weight: 600;
+}
+
+h4 {
+  font-size: 1.25rem;
+  font-weight: 600;
+}
+
+p {
+  font-size: 1rem;
+  line-height: 1.5rem;
+}
+
+/* Links */
+a {
+  transition: color 0.2s;
+}
+
+a:hover {
+  color: #10b981;
+}
+
+/* Code blocks */
+code {
+  background-color: #f3f4f6;
+  padding: 0.375rem 0.5rem;
+  border-radius: 0.375rem;
+  font-size: 0.875rem;
+  font-family: 'Fira Code', monospace;
+}
+
+html.dark code {
+  background-color: #1f2937;
+}
+
+pre {
+  background-color: #111827;
+  color: #f3f4f6;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  overflow-x: auto;
+}
+
+pre code {
+  background-color: transparent;
+  padding: 0;
+}
+
+/* Selection color */
+::selection {
+  background-color: #10b981;
+  color: #ffffff;
+}
+
+/* Utility classes */
+.container-max {
+  max-width: 64rem;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+}
+
+.grid-cols-auto {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1.5rem;
+}
+
+.text-gradient {
+  background: linear-gradient(to right, #10b981, #059669);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.btn-primary {
+  padding: 0.75rem 1.5rem;
+  background-color: #10b981;
+  color: #ffffff;
+  border-radius: 0.5rem;
+  font-weight: 500;
+  transition: opacity 0.2s;
+  cursor: pointer;
+}
+
+.btn-primary:hover {
+  opacity: 0.9;
+}
+
+.btn-secondary {
+  padding: 0.75rem 1.5rem;
+  border: 1px solid #d1d5db;
+  border-radius: 0.5rem;
+  font-weight: 500;
+  transition: background-color 0.2s;
+  cursor: pointer;
+}
+
+html.dark .btn-secondary {
+  border-color: #374151;
+}
+
+.btn-secondary:hover {
+  background-color: #f3f4f6;
+}
+
+html.dark .btn-secondary:hover {
+  background-color: #1f2937;
+}
