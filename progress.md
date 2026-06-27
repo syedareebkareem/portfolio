@@ -343,3 +343,69 @@ Current Status:
 ✅ Project detail pages working
 ✅ Contact form storing submissions
 ✅ Ready for Git setup & deployment
+
+
+MAJOR TASK 7: GIT & VERSION CONTROL ✅
+
+Repository:
+✅ https://github.com/syedareebkareem/portfolio
+
+What's Pushed:
+✅ All source code
+✅ Components, pages, lib files
+✅ Config files (tailwind, next, tsconfig)
+✅ .gitignore (node_modules & .env.local excluded)
+
+What's NOT Pushed (correctly):
+✅ node_modules/ (too large, 300MB+)
+✅ .env.local (contains secret API keys)
+✅ .next/ (build cache)
+
+Git Identity Set:
+✅ user.email configured
+✅ user.name configured
+
+Workflow Going Forward:
+→ Make changes locally
+→ git add .
+→ git commit -m "description"
+→ git push
+→ Changes live on GitHub
+→ Vercel auto-deploys (after MAJOR TASK 10)
+
+Current Status:
+✅ Code backed up on GitHub
+✅ Ready for Vercel deployment
+✅ Version history started
+
+MAJOR TASK 8: DARK MODE & ANIMATIONS ✅
+
+Packages Installed:
+✅ next-themes (dark mode management)
+
+Files Created/Modified:
+1. components/ThemeProvider.tsx  → Wraps app with theme context
+2. components/AnimatedSection.tsx → Reusable fade-in component
+3. components/Nav.tsx            → Added dark mode toggle
+4. app/layout.tsx                → Wrapped with ThemeProvider
+5. app/page.tsx                  → Added AnimatedSection wrappers
+
+Dark Mode:
+✅ Moon/Sun toggle in navbar
+✅ Works on desktop and mobile
+✅ Persists across page refreshes
+✅ Respects system preference by default
+✅ Smooth transition between modes
+✅ Hydration error fixed (mounted check)
+
+Animations:
+✅ Sections fade in on page load
+✅ Staggered delays (0.1s, 0.2s, 0.3s, 0.4s)
+✅ Smooth ease-out transitions
+✅ No layout shift or flicker
+
+Current Status:
+✅ Dark mode fully functional
+✅ Animations working
+✅ No console errors
+✅ Ready for deployment

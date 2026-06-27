@@ -1,5 +1,6 @@
 'use client'
 
+
 import { useState } from 'react'
 import Container from '@/components/Container'
 import Hero from '@/components/Hero'

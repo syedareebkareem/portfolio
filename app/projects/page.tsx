@@ -3,6 +3,19 @@ import Hero from '@/components/Hero'
 import Card from '@/components/Card'
 import { getAllProjects } from '@/lib/projects'
 
+import type { Metadata } from 'next'
+
+export const metadata: Metadata = {
+  title: 'Projects - Your Name',
+  description: 'Browse my portfolio of web development projects. Custom websites, full-stack apps, and more.',
+  openGraph: {
+    title: 'Projects - Your Name',
+    description: 'Browse my portfolio of web development projects.',
+    url: 'https://yourname.dev/projects',
+    type: 'website',
+  },
+}
+
 export default async function Projects() {
   const projects = await getAllProjects()
 

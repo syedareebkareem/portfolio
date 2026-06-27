@@ -2,6 +2,20 @@ import Container from '@/components/Container'
 import Hero from '@/components/Hero'
 import Button from '@/components/Button'
 
+import type { Metadata } from 'next'
+
+export const metadata: Metadata = {
+  title: 'About - Your Name',
+  description: 'Learn about my background, skills, and experience as a web developer.',
+  openGraph: {
+    title: 'About - Your Name',
+    description: 'Learn about my background, skills, and experience.',
+    url: 'https://yourname.dev/about',
+    type: 'website',
+  },
+}
+
+
 export default function About() {
   return (
     <div>
